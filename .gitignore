@@ -1,0 +1,30 @@
+# Gitignore for Textbook-Physical-AI-Humanoid-Robotics
+
+# Node.js (if applicable for website build process)
+node_modules/
+dist/
+build/
+*.log
+.env*
+
+# Python (if applicable for scripts)
+__pycache__/
+*.pyc
+.venv/
+venv/
+dist/
+*.egg-info/
+
+# Universal
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.vscode/
+.idea/
+history/
+website/
+specs/*/contracts/
+specs/*/data-model.md
+specs/*/research.md
+specs/*/quickstart.md
