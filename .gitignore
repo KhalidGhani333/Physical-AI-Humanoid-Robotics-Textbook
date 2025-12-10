@@ -23,7 +23,6 @@ Thumbs.db
 .vscode/
 .idea/
 history/
-website/
 specs/*/contracts/
 specs/*/data-model.md
 specs/*/research.md
