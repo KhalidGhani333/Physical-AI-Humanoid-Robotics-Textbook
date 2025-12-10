@@ -1,0 +1,108 @@
+<svg width="700" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" font-size="18" font-weight="bold">ROS Communication Patterns</text>
+
+  <!-- Topics Section -->
+  <rect x="50" y="60" width="200" height="130" fill="#f5f5f5" stroke="#000" stroke-width="2" rx="10"/>
+  <text x="150" y="80" text-anchor="middle" font-size="14" font-weight="bold" fill="#d32f2f">Topics</text>
+  <text x="150" y="100" text-anchor="middle" font-size="12">Publisher-Subscriber</text>
+  <text x="150" y="115" text-anchor="middle" font-size="11">Continuous data flow</text>
+
+  <!-- Publisher -->
+  <rect x="70" y="130" width="80" height="40" fill="#c8e6c9" stroke="#000" stroke-width="1"/>
+  <text x="110" y="155" text-anchor="middle" font-size="10">Publisher</text>
+
+  <!-- Subscribers -->
+  <rect x="170" y="120" width="70" height="30" fill="#ffcdd2" stroke="#000" stroke-width="1"/>
+  <text x="205" y="140" text-anchor="middle" font-size="9">Sub1</text>
+  <rect x="170" y="160" width="70" height="30" fill="#ffcdd2" stroke="#000" stroke-width="1"/>
+  <text x="205" y="180" text-anchor="middle" font-size="9">Sub2</text>
+
+  <!-- Topic arrow -->
+  <line x1="150" y1="150" x2="170" y2="135" stroke="#2196f3" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="150" y1="150" x2="170" y2="175" stroke="#2196f3" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="160" y="130" font-size="9" fill="#2196f3">/topic</text>
+
+  <!-- Services Section -->
+  <rect x="260" y="60" width="200" height="130" fill="#f5f5f5" stroke="#000" stroke-width="2" rx="10"/>
+  <text x="360" y="80" text-anchor="middle" font-size="14" font-weight="bold" fill="#303f9f">Services</text>
+  <text x="360" y="100" text-anchor="middle" font-size="12">Client-Server</text>
+  <text x="360" y="115" text-anchor="middle" font-size="11">Request-Response</text>
+
+  <!-- Client -->
+  <rect x="280" y="130" width="70" height="40" fill="#bbdefb" stroke="#000" stroke-width="1"/>
+  <text x="315" y="155" text-anchor="middle" font-size="10">Client</text>
+
+  <!-- Server -->
+  <rect x="380" y="130" width="70" height="40" fill="#fff3e0" stroke="#000" stroke-width="1"/>
+  <text x="415" y="155" text-anchor="middle" font-size="10">Server</text>
+
+  <!-- Service arrows -->
+  <line x1="350" y1="150" x2="380" y2="150" stroke="#4caf50" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="365" y="140" font-size="9" fill="#4caf50">Request</text>
+  <line x1="450" y1="150" x2="420" y2="150" stroke="#ff9800" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="435" y="140" font-size="9" fill="#ff9800">Response</text>
+
+  <!-- Actions Section -->
+  <rect x="470" y="60" width="200" height="130" fill="#f5f5f5" stroke="#000" stroke-width="2" rx="10"/>
+  <text x="570" y="80" text-anchor="middle" font-size="14" font-weight="bold" fill="#7b1fa2">Actions</text>
+  <text x="570" y="100" text-anchor="middle" font-size="12">Goal-Feedback-Result</text>
+  <text x="570" y="115" text-anchor="middle" font-size="11">Long-running tasks</text>
+
+  <!-- Action Client -->
+  <rect x="490" y="130" width="70" height="40" fill="#e1bee7" stroke="#000" stroke-width="1"/>
+  <text x="525" y="155" text-anchor="middle" font-size="10">Client</text>
+
+  <!-- Action Server -->
+  <rect x="590" y="130" width="70" height="40" fill="#fff9c4" stroke="#000" stroke-width="1"/>
+  <text x="625" y="155" text-anchor="middle" font-size="10">Server</text>
+
+  <!-- Action arrows -->
+  <line x1="560" y1="140" x2="590" y2="140" stroke="#9c27b0" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="575" y="130" font-size="9" fill="#9c27b0">Goal</text>
+  <line x1="660" y1="145" x2="630" y2="145" stroke="#ff5722" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="645" y="135" font-size="9" fill="#ff5722">Feedback</text>
+  <line x1="660" y1="160" x2="560" y2="160" stroke="#8bc34a" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="610" y="150" font-size="9" fill="#8bc34a">Result</text>
+
+  <!-- Comparison Table -->
+  <rect x="50" y="210" width="620" height="230" fill="#fafafa" stroke="#000" stroke-width="2"/>
+  <text x="360" y="230" text-anchor="middle" font-size="14" font-weight="bold">Comparison</text>
+
+  <!-- Headers -->
+  <text x="100" y="255" text-anchor="middle" font-size="12" font-weight="bold">Pattern</text>
+  <text x="250" y="255" text-anchor="middle" font-size="12" font-weight="bold">Use Case</text>
+  <text x="400" y="255" text-anchor="middle" font-size="12" font-weight="bold">Sync/Async</text>
+  <text x="550" y="255" text-anchor="middle" font-size="12" font-weight="bold">Feedback</text>
+
+  <!-- Topics row -->
+  <text x="100" y="280" text-anchor="middle" font-size="11" fill="#d32f2f">Topics</text>
+  <text x="250" y="280" text-anchor="middle" font-size="10">Continuous data</text>
+  <text x="400" y="280" text-anchor="middle" font-size="10">Asynchronous</text>
+  <text x="550" y="280" text-anchor="middle" font-size="10">No</text>
+
+  <!-- Services row -->
+  <text x="100" y="305" text-anchor="middle" font-size="11" fill="#303f9f">Services</text>
+  <text x="250" y="305" text-anchor="middle" font-size="10">Request/Response</text>
+  <text x="400" y="305" text-anchor="middle" font-size="10">Synchronous</text>
+  <text x="550" y="305" text-anchor="middle" font-size="10">No</text>
+
+  <!-- Actions row -->
+  <text x="100" y="330" text-anchor="middle" font-size="11" fill="#7b1fa2">Actions</text>
+  <text x="250" y="330" text-anchor="middle" font-size="10">Long tasks</text>
+  <text x="400" y="330" text-anchor="middle" font-size="10">Sync + Feedback</text>
+  <text x="550" y="330" text-anchor="middle" font-size="10">Yes</text>
+
+  <!-- Examples -->
+  <text x="100" y="360" text-anchor="middle" font-size="10">Sensor data, status</text>
+  <text x="250" y="360" text-anchor="middle" font-size="10">Calculations, triggers</text>
+  <text x="400" y="360" text-anchor="middle" font-size="10">Navigation, manipulation</text>
+  <text x="550" y="360" text-anchor="middle" font-size="10">Cancellation</text>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000" />
+    </marker>
+  </defs>
+</svg>

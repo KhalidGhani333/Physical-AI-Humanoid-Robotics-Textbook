@@ -1,0 +1,67 @@
+<svg width="700" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="white"/>
+
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">Sim-to-Real Gap in Robotics</text>
+
+  <!-- Simulation Side -->
+  <g transform="translate(100, 80)">
+    <rect x="0" y="0" width="180" height="280" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="10"/>
+    <text x="90" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#1976d2">SIMULATION</text>
+
+    <!-- Perfect Environment -->
+    <rect x="20" y="50" width="140" height="60" fill="#fff" stroke="#1976d2" stroke-width="1"/>
+    <text x="90" y="75" text-anchor="middle" font-size="12" fill="#333">Perfect Physics</text>
+    <text x="90" y="90" text-anchor="middle" font-size="10" fill="#666">No Noise</text>
+
+    <!-- Perfect Sensors -->
+    <rect x="20" y="120" width="140" height="60" fill="#fff" stroke="#1976d2" stroke-width="1"/>
+    <text x="90" y="145" text-anchor="middle" font-size="12" fill="#333">Perfect Sensors</text>
+    <text x="90" y="160" text-anchor="middle" font-size="10" fill="#666">No Delay</text>
+
+    <!-- Perfect Actuators -->
+    <rect x="20" y="190" width="140" height="60" fill="#fff" stroke="#1976d2" stroke-width="1"/>
+    <text x="90" y="215" text-anchor="middle" font-size="12" fill="#333">Perfect Actuators</text>
+    <text x="90" y="230" text-anchor="middle" font-size="10" fill="#666">Instant Response</text>
+  </g>
+
+  <!-- Real World Side -->
+  <g transform="translate(420, 80)">
+    <rect x="0" y="0" width="180" height="280" fill="#ffebee" stroke="#d32f2f" stroke-width="2" rx="10"/>
+    <text x="90" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#d32f2f">REAL WORLD</text>
+
+    <!-- Noisy Environment -->
+    <rect x="20" y="50" width="140" height="60" fill="#fff" stroke="#d32f2f" stroke-width="1"/>
+    <text x="90" y="75" text-anchor="middle" font-size="12" fill="#333">Noisy Physics</text>
+    <text x="90" y="90" text-anchor="middle" font-size="10" fill="#666">Friction, etc.</text>
+
+    <!-- Imperfect Sensors -->
+    <rect x="20" y="120" width="140" height="60" fill="#fff" stroke="#d32f2f" stroke-width="1"/>
+    <text x="90" y="145" text-anchor="middle" font-size="12" fill="#333">Imperfect Sensors</text>
+    <text x="90" y="160" text-anchor="middle" font-size="10" fill="#666">Noise, Delay</text>
+
+    <!-- Imperfect Actuators -->
+    <rect x="20" y="190" width="140" height="60" fill="#fff" stroke="#d32f2f" stroke-width="1"/>
+    <text x="90" y="215" text-anchor="middle" font-size="12" fill="#333">Imperfect Actuators</text>
+    <text x="90" y="230" text-anchor="middle" font-size="10" fill="#666">Delays, Limits</text>
+  </g>
+
+  <!-- Gap Arrow -->
+  <line x1="280" y1="200" x2="420" y2="200" stroke="#f57c00" stroke-width="3" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <text x="350" y="190" text-anchor="middle" font-size="14" font-weight="bold" fill="#f57c00">THE GAP</text>
+
+  <!-- Bridge -->
+  <path d="M 280 250 Q 350 280 420 250" fill="none" stroke="#388e3c" stroke-width="3" stroke-dasharray="5,5" marker-end="url(#arrow2)"/>
+  <text x="350" y="270" text-anchor="middle" font-size="12" fill="#388e3c">Bridging Strategies</text>
+
+  <!-- Arrowhead definitions -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#f57c00" />
+    </marker>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#388e3c" />
+    </marker>
+  </defs>
+</svg>

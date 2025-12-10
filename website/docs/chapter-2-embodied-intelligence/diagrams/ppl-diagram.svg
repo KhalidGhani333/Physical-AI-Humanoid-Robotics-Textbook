@@ -1,0 +1,42 @@
+<svg width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="white"/>
+
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">Perception-Planning-Control Loop</text>
+
+  <!-- SENSE Box -->
+  <rect x="50" y="100" width="120" height="80" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="10"/>
+  <text x="110" y="130" text-anchor="middle" font-size="14" font-weight="bold" fill="#1976d2">SENSE</text>
+  <text x="110" y="150" text-anchor="middle" font-size="12" fill="#555">Perception</text>
+
+  <!-- THINK Box -->
+  <rect x="240" y="100" width="120" height="80" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="10"/>
+  <text x="300" y="130" text-anchor="middle" font-size="14" font-weight="bold" fill="#388e3c">THINK</text>
+  <text x="300" y="150" text-anchor="middle" font-size="12" fill="#555">Planning &amp; Decision</text>
+
+  <!-- ACT Box -->
+  <rect x="430" y="100" width="120" height="80" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="10"/>
+  <text x="490" y="130" text-anchor="middle" font-size="14" font-weight="bold" fill="#f57c00">ACT</text>
+  <text x="490" y="150" text-anchor="middle" font-size="12" fill="#555">Control &amp; Execution</text>
+
+  <!-- Arrows -->
+  <line x1="170" y1="140" x2="240" y2="140" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="360" y1="140" x2="430" y2="140" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Loop back arrow -->
+  <path d="M 490 180 C 490 220, 110 220, 110 180" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333" />
+    </marker>
+  </defs>
+
+  <!-- Labels -->
+  <text x="110" y="80" text-anchor="middle" font-size="12" fill="#777">Sensory Input</text>
+  <text x="300" y="80" text-anchor="middle" font-size="12" fill="#777">Cognitive Processing</text>
+  <text x="490" y="80" text-anchor="middle" font-size="12" fill="#777">Motor Output</text>
+  <text x="300" y="250" text-anchor="middle" font-size="12" fill="#777">Continuous Loop in Embodied Intelligence</text>
+</svg>
