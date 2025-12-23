@@ -6,7 +6,9 @@
       "Bash(git fetch:*)",
       "Bash(.specify/scripts/powershell/create-new-feature.ps1:*)",
       "Bash(git branch:*)",
-      "Bash(python -m py_compile \"chapter-3/examples/urdf_rclpy_example.py\")"
+      "Bash(python -m py_compile \"chapter-3/examples/urdf_rclpy_example.py\")",
+      "Bash(curl -X POST \"http://localhost:8000/api/v1/chat/completions\" -H \"Content-Type: application/json\" -d \"{\"\"message\"\":\"\"hi\"\", \"\"session_token\"\":\"\"test_session_123\"\", \"\"mode\"\":\"\"full_content\"\"}\")",
+      "Bash(dir /s)"
     ],
     "deny": [],
     "ask": []
