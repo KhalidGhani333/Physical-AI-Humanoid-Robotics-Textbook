@@ -1,0 +1,15 @@
+{
+  "name": "textbook-content-ingestor",
+  "version": "1.0.0",
+  "description": "Script to ingest textbook content into the RAG system",
+  "main": "ingest-book-content.js",
+  "scripts": {
+    "ingest": "node ingest-book-content.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "keywords": ["ai", "chatbot", "rag", "textbook"],
+  "author": "Textbook AI Assistant",
+  "license": "MIT"
+}

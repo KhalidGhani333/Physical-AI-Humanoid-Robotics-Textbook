@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"D:\\Textbook-Physical-AI-Humanoid-Robotics\\backend\\specs\\005-rag-chatbot\\checklists\")",
+      "Bash(dir \"D:\\Textbook-Physical-AI-Humanoid-Robotics\\backend\\src\\database\")"
+    ]
+  }
+}
