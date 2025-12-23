@@ -1,6 +1,6 @@
 import React from 'react';
 import OriginalLayout from '@theme-original/Layout';
-import ChatWidget from '../components/chatUI/ChatWidget';
+import ChatWidget from '../components/chatUI/BrowserOnlyChatWidget';
 
 export default function Layout(props) {
   return (
